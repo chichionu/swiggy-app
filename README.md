@@ -54,19 +54,19 @@ Content Of main.tf
     ```
 
 2 -- Content Of provider.tf
-    ```bash
+        ```bash
             terraform {
             required_providers {
                 aws = {
-                source  = "hashicorp/aws"
-                version = "~> 5.0"
+                source = "hashicorp/aws"
+                version = "6.20.0"
                     }
                 }
             }
-    ```
+        ```
 **configure the aws provider:**
     ```bash
-    
+
             provider "aws" {
             region = "us-east-1"     
             }
